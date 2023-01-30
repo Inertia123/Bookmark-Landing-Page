@@ -1,0 +1,46 @@
+$Soft-Blue: hsl(231, 69%, 60%);
+$Soft-Red: hsl(0, 94%, 66%);
+$Grayish-Blue: hsl(232, 25%, 94%);
+$Very-Dark-Blue: hsl(229, 31%, 21%);
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .links{
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            li{
+                list-style: none;
+                &:nth-last-child(1){
+                    a{
+                        color: $Grayish-Blue;
+                        background: $Soft-Red;
+                        padding: 0.5rem 1.5rem;
+                        border-radius: 0.2rem;
+                        box-shadow: 0px 10px 22px -13px $Very-Dark-Blue;
+                        &:hover{
+                            background: transparent;
+                            border: 2px solid $Soft-Red;
+                            color: $Soft-Red;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: $Very-Dark-Blue;
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                    letter-spacing: 0.08rem;
+                    &:hover{
+                        color: $Soft-Red;
+                    }
+                }
+            }
+        }
+    }
+}
